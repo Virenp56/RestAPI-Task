@@ -1,0 +1,39 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "name": "Viren",
+      "email": "viren@gmail.com",
+      "technology": "Angular",
+      "salary": 50000
+    },
+    {
+      "id": 2,
+      "name": "Viren",
+      "email": "viren@gmail.com",
+      "technology": "Angular",
+      "salary": 50000
+    },
+    {
+      "name": "Viren",
+      "email": "viren@gmail.com",
+      "technology": "Angular",
+      "salary": "500000",
+      "id": 3
+    },
+    {
+      "name": "MIHIRs",
+      "email": "viren4722@gmail.com",
+      "technology": "bnvhn",
+      "salary": "2000",
+      "id": 4
+    },
+    {
+      "name": "Viren",
+      "email": "viren@gmail.comss",
+      "technology": "Angular",
+      "salary": 50000,
+      "id": 5
+    }
+  ]
+}

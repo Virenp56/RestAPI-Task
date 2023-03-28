@@ -1,0 +1,5 @@
+<div class="d-flex flex-column align-items-center ">
+  <app-form class="w-50 py-5" [id]="id" [myname]="name" [technology]="technology" [email]="email"
+    [salary]="salary"></app-form>
+  <app-list class="w-100" (newItemEvent)="getObj($event)"></app-list>
+</div>
