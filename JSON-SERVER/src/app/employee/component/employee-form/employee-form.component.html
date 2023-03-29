@@ -1,0 +1,34 @@
+<form class=" bg-light p-3 rounded" [formGroup]="reactiveForm" (ngSubmit)="toggle ? onSubmit() : onEdit()">
+    <div class="mb-3">
+        <label for="name" class="form-label">name</label>
+        <input type="text" class="form-control" id="name" formControlName="name">
+        <div *ngIf="reactiveForm.get('name')?.invalid && (reactiveForm.get('name')?.dirty || reactiveForm.get('name')?.touched)"
+            class="alert">
+            <div *ngIf="reactiveForm.get('name')?.errors?.['required']">
+                Name is required.
+            </div>
+            <div *ngIf="reactiveForm.get('name')?.errors?.['minlength']">
+                Name must be at least 3 characters long.
+            </div>
+            <div *ngIf="reactiveForm.get('name')?.errors?.['maxlength']">
+                Too long name.
+            </div>
+            <div *ngIf="reactiveForm.get('name')?.errors?.['pattern']">
+                Enter Valid Name.
+            </div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="eamil" class="form-label">Email</label>
+        <input type="text" class="form-control" id="eamil" formControlName="email">
+    </div>
+    <div class="mb-3">
+        <label for="technology" class="form-label">Technology</label>
+        <input type="text" class="form-control" id="technology" formControlName="technology">
+    </div>
+    <div class="mb-3">
+        <label for="salary" class="form-label">Salary</label>
+        <input type="text" class="form-control" id="salary" formControlName="salary">
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="reactiveForm.invalid" #submitButton>Submit</button>
+</form>

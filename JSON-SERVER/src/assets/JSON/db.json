@@ -1,0 +1,32 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "name": "Viren",
+      "email": "viren@gmail.com",
+      "technology": "Angular",
+      "salary": 50000
+    },
+    {
+      "id": 2,
+      "name": "Viren",
+      "email": "viren@gmail.com",
+      "technology": "Angular",
+      "salary": 50000
+    },
+    {
+      "name": "Viren",
+      "email": "viren@gmail.com",
+      "technology": "Angular",
+      "salary": "50000",
+      "id": 3
+    },
+    {
+      "name": "Viren patel",
+      "email": "viren4722@gmail.com",
+      "technology": "Frontend",
+      "salary": "2000",
+      "id": 4
+    }
+  ]
+}
